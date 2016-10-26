@@ -48,8 +48,3 @@ frontRouter.prototype.map = function(object) {
     }, false);
 };
 
-// router.map({
-//     '/nihao': function(){console.log('hello')},
-//     '/john': function(){console.log('wohao')}
-
-// })
