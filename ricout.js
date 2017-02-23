@@ -1,4 +1,4 @@
-export default function Ricout(defaultHash) {
+function Ricout(defaultHash) {
     if (!!defaultHash) {
         location.hash = defaultHash;
     }
@@ -78,3 +78,13 @@ Ricout.prototype.map = function(object, callback) {
         }, false);
     });
 };
+
+(function(factory, global) {
+    if (typeof exports === 'object' && typeof module !== 'undefined') {
+        module.exports = factory();
+    } else if (typeof define === 'function' && define.amd) {
+        define([], factory);
+    } else {
+        global.factory = factory();
+    }
+})(Ricout, this);
