@@ -1,7 +1,22 @@
 # customRouter
 
-因为各种框架内配置的路由不是很好用，不是很搭公司里的应用场景，所以自己写了下。
 
-这个有用一段时间了，优化了几次，没发现问题。
+## SAMPLE
 
-写得太次太初级，高手请随便拍随便喷.
+```javascript
+  new Router().map({
+     '/': function() {
+        /*DO SOMETHING*/
+     },
+     '/sample/param/2': function(object) {
+        /*DO SOMETHING WITH OBJECT LIKE: 
+            console.log(object.param);
+        */
+     }
+  })
+
+```
+
+server || front use, whatever you like.
+
+ENJOY IT．　:)
