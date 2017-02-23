@@ -8,7 +8,7 @@
      '/': function() {
         /*DO SOMETHING*/
      },
-     '/sample/param/2': function(object) {
+     '/sample/param:id': function(object) {
         /*DO SOMETHING WITH OBJECT LIKE: 
             console.log(object.param);
         */
