@@ -1,9 +1,9 @@
-export default function frontRouter(defaultHash) {
+export default function ricout(defaultHash) {
     if (!!defaultHash) {
         location.hash = defaultHash;
     }
 };
-frontRouter.prototype.use = function(hashTo, callback) {
+ricout.prototype.use = function(hashTo, callback) {
     var slicer = hashTo.slice('1');
     if (/\:/gm.test(slicer)) {
         location.hash = slicer.replace(/\:/gm, '/');
@@ -12,7 +12,7 @@ frontRouter.prototype.use = function(hashTo, callback) {
     };
     callback && callback();
 };
-frontRouter.prototype.hasher = function(object) {
+ricout.prototype.hasher = function(object) {
     var _hash;
     var temporaryHash;
     var RegHash;
@@ -62,7 +62,7 @@ frontRouter.prototype.hasher = function(object) {
     }
 };
 
-frontRouter.prototype.map = function(object, callback) {
+ricout.prototype.map = function(object, callback) {
     var _this = this;
 
     (function(cb) {
