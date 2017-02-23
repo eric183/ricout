@@ -1,9 +1,9 @@
-export default function ricout(defaultHash) {
+export default function Ricout(defaultHash) {
     if (!!defaultHash) {
         location.hash = defaultHash;
     }
 };
-ricout.prototype.use = function(hashTo, callback) {
+Ricout.prototype.use = function(hashTo, callback) {
     var slicer = hashTo.slice('1');
     if (/\:/gm.test(slicer)) {
         location.hash = slicer.replace(/\:/gm, '/');
@@ -12,7 +12,7 @@ ricout.prototype.use = function(hashTo, callback) {
     };
     callback && callback();
 };
-ricout.prototype.hasher = function(object) {
+Ricout.prototype.hasher = function(object) {
     var _hash;
     var temporaryHash;
     var RegHash;
@@ -62,7 +62,7 @@ ricout.prototype.hasher = function(object) {
     }
 };
 
-ricout.prototype.map = function(object, callback) {
+Ricout.prototype.map = function(object, callback) {
     var _this = this;
 
     (function(cb) {
