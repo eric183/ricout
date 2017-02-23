@@ -1,10 +1,10 @@
-# customRouter
+# ricout
 
 
 ## SAMPLE
 
 ```javascript
-  new Router().map({
+  new Ricout().map({
      '/': function() {
         /*DO SOMETHING*/
      },
