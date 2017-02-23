@@ -17,6 +17,6 @@
 
 ```
 
-server || front use, whatever you like.
+Using as Require || Script, whatever you like.
 
-ENJOY IT．　:)
+ENJOY IT．　: )
